@@ -1,0 +1,620 @@
+ => CACHED [stage-1  9/22] RUN chown -R 1000:roo  0.0s
+
+ => ERROR [stage-1 10/22] RUN git clone --recu  220.6s
+
+------                                                 
+
+ > [stage-1 10/22] RUN git clone --recursive https://github.com/srivatsankrishnan/oss-arch-gym.git:           
+
+0.633 Cloning into 'oss-arch-gym'...                   
+
+Updating files: 100% (5524/5524), done.                
+
+35.18 Submodule 'sims/AstraSim/astrasim_archgym_public' (https://github.com/changhai0109/astrasim-archgym-public.git) registered for path 'sims/AstraSim/astrasim_archgym_public'
+
+35.19 Submodule 'sims/CFU-Playground/CFU-Playground' (https://github.com/google/CFU-Playground.git) registered for path 'sims/CFU-Playground/CFU-Playground'
+
+35.19 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public'...
+
+37.27 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground'...
+
+47.10 Submodule path 'sims/AstraSim/astrasim_archgym_public': checked out 'dacf289ea9a1958e456b6b1d993f7bec5852a70d'
+
+47.11 Submodule 'astra-sim' (https://github.com/changhai0109/astra-sim.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim'
+
+47.11 Submodule 'symbolic_tensor_network' (https://github.com/changhai0109/symbolic_tensor_network.git) registered for path 'sims/AstraSim/astrasim_archgym_public/symbolic_tensor_network'
+
+47.12 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim'...
+
+51.46 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/symbolic_tensor_network'...
+
+52.43 Submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim': checked out '58c3118cec88bf4979070e9f1b6437acf5c303d7'
+
+52.43 Submodule 'extern/graph_frontend/chakra' (https://github.com/changhai0109/chakra.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/chakra'
+
+52.43 Submodule 'extern/graph_frontend/param' (https://github.com/facebookresearch/param.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/param'
+
+52.44 Submodule 'extern/network_backend/analytical' (https://github.com/astra-sim/astra-network-analytical.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical'
+
+52.44 Submodule 'extern/network_backend/garnet/gem5_astra' (https://github.com/astra-sim/astra-network-garnet.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/garnet/gem5_astra'
+
+52.44 Submodule 'extern/network_backend/ns-3' (https://github.com/astra-sim/astra-network-ns3.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/ns-3'
+
+52.44 Submodule 'extern/remote_memory_backend/analytical' (https://github.com/astra-sim/astra-memory-analytical.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/remote_memory_backend/analytical'
+
+52.44 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/chakra'...
+
+53.19 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/param'...
+
+54.25 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical'...
+
+55.03 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/garnet/gem5_astra'...
+
+74.73 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/ns-3'...
+
+122.4 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/remote_memory_backend/analytical'...
+
+123.0 Submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/chakra': checked out '89f26a5fdcd4d7c7e745be9fa5c3ee2a0d7c86ac'
+
+123.1 Submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/param': checked out 'fd5ad3aae7bfe6a28db7b0070a5135b359a8d4c0'
+
+123.1 Submodule 'train/workloads/dlrm' (https://github.com/facebookresearch/dlrm.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/param/train/workloads/dlrm'
+
+123.1 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/param/train/workloads/dlrm'...
+
+124.3 Submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/param/train/workloads/dlrm': checked out 'ab68cd5d2e6348bd5d2b24e7c668f79676f46154'
+
+124.3 Submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical': checked out 'a035d9ecf4620d3b06e2c6c50b4f0c44db56c44d'
+
+124.3 Submodule 'extern/googletest' (git@github.com:google/googletest.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical/extern/googletest'
+
+124.3 Submodule 'extern/yaml-cpp' (git@github.com:jbeder/yaml-cpp.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical/extern/yaml-cpp'
+
+124.3 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical/extern/googletest'...
+
+124.3 error: cannot run ssh: No such file or directory
+
+124.3 fatal: unable to fork
+
+124.3 fatal: clone of 'git@github.com:google/googletest.git' into submodule path '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical/extern/googletest' failed
+
+124.3 Failed to clone 'extern/googletest'. Retry scheduled
+
+124.3 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical/extern/yaml-cpp'...
+
+124.3 error: cannot run ssh: No such file or directory
+
+124.3 fatal: unable to fork
+
+124.3 fatal: clone of 'git@github.com:jbeder/yaml-cpp.git' into submodule path '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical/extern/yaml-cpp' failed
+
+124.3 Failed to clone 'extern/yaml-cpp'. Retry scheduled
+
+124.3 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical/extern/googletest'...
+
+124.3 error: cannot run ssh: No such file or directory
+
+124.3 fatal: unable to fork
+
+124.3 fatal: clone of 'git@github.com:google/googletest.git' into submodule path '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical/extern/googletest' failed
+
+124.3 Failed to clone 'extern/googletest' a second time, aborting
+
+125.4 Submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/garnet/gem5_astra': checked out 'c09ba4ebee0643cff3f75d64143d5310b7f31ee1'
+
+125.9 Submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/ns-3': checked out 'a2dd172aa001f61085715e5766c1f566d918b3bb'
+
+126.0 Submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/remote_memory_backend/analytical': checked out 'bb12dd56fb05980e749736e6dcbd796a918b9256'
+
+126.0 Failed to recurse into submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical'
+
+126.0 Submodule path 'sims/AstraSim/astrasim_archgym_public/symbolic_tensor_network': checked out '89fb51480ac72db2d2d6199983f3bd00ba6c28e8'
+
+126.0 Failed to recurse into submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim'
+
+126.2 Submodule path 'sims/CFU-Playground/CFU-Playground': checked out 'fb43f80f44c32f81c9cdc1d7c015946f0265fa08'
+
+126.2 Submodule 'third_party/make-env' (https://github.com/SymbiFlow/make-env.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/make-env'
+
+126.2 Submodule 'third_party/python/amaranth' (https://github.com/amaranth-lang/amaranth) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/amaranth'
+
+126.2 Submodule 'third_party/python/jinja' (https://github.com/pallets/jinja.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/jinja'
+
+126.2 Submodule 'soc/deps/litedram' (https://github.com/enjoy-digital/litedram.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/litedram'
+
+126.2 Submodule 'soc/deps/liteeth' (https://github.com/enjoy-digital/liteeth.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/liteeth'
+
+126.2 Submodule 'third_party/python/litehyperbus' (https://github.com/litex-hub/litehyperbus.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/litehyperbus'
+
+126.2 Submodule 'soc/deps/liteiclink' (https://github.com/enjoy-digital/liteiclink.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/liteiclink'
+
+126.2 Submodule 'third_party/python/litepcie' (https://github.com/enjoy-digital/litepcie.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/litepcie'
+
+126.2 Submodule 'third_party/python/litescope' (https://github.com/enjoy-digital/litescope.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/litescope'
+
+126.2 Submodule 'third_party/python/litespi' (https://github.com/litex-hub/litespi.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/litespi'
+
+126.3 Submodule 'third_party/python/litevideo' (https://github.com/enjoy-digital/litevideo.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/litevideo'
+
+126.3 Submodule 'soc/deps/litex' (https://github.com/enjoy-digital/litex.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/litex'
+
+126.3 Submodule 'soc/deps/litex_boards' (https://github.com/litex-hub/litex-boards.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/litex_boards'
+
+126.3 Submodule 'third_party/python/markupsafe' (https://github.com/pallets/markupsafe.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/markupsafe'
+
+126.3 Submodule 'third_party/python/meson' (https://github.com/mesonbuild/meson) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/meson'
+
+126.3 Submodule 'soc/deps/migen' (https://github.com/m-labs/migen.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/migen'
+
+126.3 Submodule 'soc/deps/pyserial' (https://github.com/pyserial/pyserial.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pyserial'
+
+126.3 Submodule 'third_party/python/pythondata-misc-tapcfg' (https://github.com/litex-hub/pythondata-misc-tapcfg.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-misc-tapcfg'
+
+126.3 Submodule 'third_party/python/pythondata-software-picolibc' (https://github.com/litex-hub/pythondata-software-picolibc) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-software-picolibc'
+
+126.3 Submodule 'soc/deps/pythondata_cpu_serv' (https://github.com/litex-hub/pythondata-cpu-serv.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_serv'
+
+126.3 Submodule 'soc/deps/pythondata_cpu_vexriscv' (https://github.com/litex-hub/pythondata-cpu-vexriscv.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv'
+
+126.3 Submodule 'soc/deps/pythondata_software_compiler_rt' (https://github.com/litex-hub/pythondata-software-compiler_rt.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_software_compiler_rt'
+
+126.3 Submodule 'third_party/python/pyvcd' (https://github.com/SanDisk-Open-Source/pyvcd.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pyvcd'
+
+126.3 Submodule 'third_party/python/valentyusb' (https://github.com/litex-hub/valentyusb) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/valentyusb'
+
+126.3 Submodule 'third_party/python/vizier' (https://github.com/ShvetankPrakash/vizier.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/vizier'
+
+126.3 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/make-env'...
+
+127.1 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/amaranth'...
+
+128.5 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/jinja'...
+
+129.7 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/litedram'...
+
+131.0 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/liteeth'...
+
+131.8 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/litehyperbus'...
+
+132.7 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/liteiclink'...
+
+133.5 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/litepcie'...
+
+134.4 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/litescope'...
+
+135.4 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/litespi'...
+
+136.2 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/litevideo'...
+
+141.9 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/litex'...
+
+147.0 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/litex_boards'...
+
+148.3 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/markupsafe'...
+
+149.5 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/meson'...
+
+160.1 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/migen'...
+
+161.2 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pyserial'...
+
+162.6 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-misc-tapcfg'...
+
+163.4 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-software-picolibc'...
+
+164.1 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_serv'...
+
+165.3 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv'...
+
+167.0 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_software_compiler_rt'...
+
+168.6 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pyvcd'...
+
+169.3 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/valentyusb'...
+
+170.0 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/vizier'...
+
+171.2 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/make-env': checked out '33b80bd32c30fb8affd0fd5cda544d1bca075593'
+
+171.2 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/amaranth': checked out 'db49294cf722e9463666bd06f81a86f930b8707c'
+
+171.3 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/jinja': checked out '7fb13bf94443f067c74204a1aee368fdf0591764'
+
+171.3 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/litedram': checked out '3d066c87f948e3f8584dfa0244d0930161f71e62'
+
+171.4 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/liteeth': checked out '6d742e7999acc775dc26d58f1cafc170ce2c54f5'
+
+171.4 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/litehyperbus': checked out '76454e4c0c304a34b9915722de750887c3abbe89'
+
+171.4 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/liteiclink': checked out '04aa1396f500418dbcbb15f5afb08eaf01a9e8d9'
+
+171.5 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/litepcie': checked out 'b4f3f2148e6d554d2f4c1d3ab30af3757eaf8de5'
+
+171.5 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/litescope': checked out '1d7e91d019ed2b9fff56485995a7d0d16b45c21b'
+
+171.6 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/litespi': checked out '28a17d801d588f1cd43ac8c38b98faa603eba45e'
+
+171.6 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/litevideo': checked out '41f30143075ece3fff5c33a332ed067d1837cbb3'
+
+171.7 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/litex': checked out 'b9a1fec30fd1f0691f9c6463bac24ea1da75355a'
+
+171.8 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/litex_boards': checked out 'cf030402d496102005161023b8d27123546ae53d'
+
+171.8 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/markupsafe': checked out 'ac5017b394f526b9be33f48d397a1844023dd573'
+
+172.1 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/meson': checked out 'ec388fe7c2b93879499ad782c2da41ec22d003b2'
+
+172.2 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/migen': checked out '0fb91737090fe45fd764ea3f71257a4c53c7a4ae'
+
+172.2 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pyserial': checked out '31fa4807d73ed4eb9891a88a15817b439c4eea2d'
+
+172.3 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-misc-tapcfg': checked out 'fbcb02422940bbb97c492f0c970959d262b33632'
+
+172.3 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-software-picolibc': checked out '393d106c6e9b8fdd115a0a301f3a6c0478f92f3b'
+
+172.3 Submodule 'pythondata_software_picolibc/data' (https://github.com/picolibc/picolibc) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-software-picolibc/pythondata_software_picolibc/data'
+
+172.3 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-software-picolibc/pythondata_software_picolibc/data'...
+
+213.7 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-software-picolibc/pythondata_software_picolibc/data': checked out 'ce7bd3ba2761497ba380cb131d1493eb7c2bcaab'
+
+213.7 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_serv': checked out 'cdede3b5e35e0c8c385ff10d783905d95cd864ab'
+
+213.8 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv': checked out '11ac8e1c0c66fa0537053980b47757d97dbddf84'
+
+213.8 Submodule 'litex/data/cpu/vexriscv/verilog/ext/VexRiscv' (https://github.com/SpinalHDL/VexRiscv.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv'
+
+213.8 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv'...
+
+217.2 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv': checked out '24795ef09b88defe2ee1bb335e5caaf7e07e64ff'
+
+217.2 Submodule 'src/test/resources/VexRiscvRegressionData' (https://github.com/SpinalHDL/VexRiscvRegressionData.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/src/test/resources/VexRiscvRegressionData'
+
+217.2 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/src/test/resources/VexRiscvRegressionData'...
+
+218.6 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/src/test/resources/VexRiscvRegressionData': checked out '539398c1481203a51115b5f1228ea961f0ac9bd3'
+
+218.8 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_software_compiler_rt': checked out 'fcb03245613ccf3079cc833a701f13d0beaae09d'
+
+218.8 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pyvcd': checked out 'ecaa5bf0faebeb34a5b0eead41a0ad8c73abb8b4'
+
+218.9 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/valentyusb': checked out '0b534ccfccfcdcb7a5db219743f0c0b20e5ec412'
+
+218.9 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/vizier': checked out '4e4fe1e5a95878a8707157c4707e302418220e08'
+
+218.9 Failed to recurse into submodule path 'sims/AstraSim/astrasim_archgym_public'
+
+------
+
+Dockerfile:29
+
+--------------------
+
+  27 |     
+
+  28 |     #RUN conda install
+
+  29 | >>> RUN git clone --recursive https://github.com/srivatsankrishnan/oss-arch-gym.git
+
+  30 |     RUN chown -R 1000:root /home/workspace && chmod -R 775 /home/workspace
+
+  31 |     RUN cd oss-arch-gym && conda env create -f environment.yml
+
+--------------------
+
+ERROR: failed to solve: process "/bin/sh -c git clone --recursive https://github.com/srivatsankrishnan/oss-arch-gym.git" did not complete successfully: exit code: 1 
+
+ 
+
+
+========================================================================================================================
+
+
+
+
+
+ CACHED [stage-1  9/22] RUN chown -R 1000:root /home/worksp  0.0s
+
+ => ERROR [stage-1 10/22] RUN git clone --recursive https://  231.2s
+
+------                                                               
+
+ > [stage-1 10/22] RUN git clone --recursive https://github.com/srivatsankrishnan/oss-arch-gym.git:                                       
+
+1.231 Cloning into 'oss-arch-gym'...                                 
+
+Updating files: 100% (5524/5524), done.                              
+
+45.22 Submodule 'sims/AstraSim/astrasim_archgym_public' (https://github.com/changhai0109/astrasim-archgym-public.git) registered for path 'sims/AstraSim/astrasim_archgym_public'
+
+45.22 Submodule 'sims/CFU-Playground/CFU-Playground' (https://github.com/google/CFU-Playground.git) registered for path 'sims/CFU-Playground/CFU-Playground'
+
+45.23 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public'...
+
+46.53 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground'...
+
+51.36 Submodule path 'sims/AstraSim/astrasim_archgym_public': checked out 'dacf289ea9a1958e456b6b1d993f7bec5852a70d'
+
+51.37 Submodule 'astra-sim' (https://github.com/changhai0109/astra-sim.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim'
+
+51.37 Submodule 'symbolic_tensor_network' (https://github.com/changhai0109/symbolic_tensor_network.git) registered for path 'sims/AstraSim/astrasim_archgym_public/symbolic_tensor_network'
+
+51.38 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim'...
+
+56.12 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/symbolic_tensor_network'...
+
+56.94 Submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim': checked out '58c3118cec88bf4979070e9f1b6437acf5c303d7'
+
+56.95 Submodule 'extern/graph_frontend/chakra' (https://github.com/changhai0109/chakra.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/chakra'
+
+56.95 Submodule 'extern/graph_frontend/param' (https://github.com/facebookresearch/param.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/param'
+
+56.95 Submodule 'extern/network_backend/analytical' (https://github.com/astra-sim/astra-network-analytical.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical'
+
+56.95 Submodule 'extern/network_backend/garnet/gem5_astra' (https://github.com/astra-sim/astra-network-garnet.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/garnet/gem5_astra'
+
+56.95 Submodule 'extern/network_backend/ns-3' (https://github.com/astra-sim/astra-network-ns3.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/ns-3'
+
+56.95 Submodule 'extern/remote_memory_backend/analytical' (https://github.com/astra-sim/astra-memory-analytical.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/remote_memory_backend/analytical'
+
+56.95 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/chakra'...
+
+57.71 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/param'...
+
+60.75 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical'...
+
+61.53 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/garnet/gem5_astra'...
+
+127.8 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/ns-3'...
+
+169.0 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/remote_memory_backend/analytical'...
+
+169.7 Submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/chakra': checked out '89f26a5fdcd4d7c7e745be9fa5c3ee2a0d7c86ac'
+
+169.7 Submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/param': checked out 'fd5ad3aae7bfe6a28db7b0070a5135b359a8d4c0'
+
+169.7 Submodule 'train/workloads/dlrm' (https://github.com/facebookresearch/dlrm.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/param/train/workloads/dlrm'
+
+169.7 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/param/train/workloads/dlrm'...
+
+170.6 Submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/graph_frontend/param/train/workloads/dlrm': checked out 'ab68cd5d2e6348bd5d2b24e7c668f79676f46154'
+
+170.6 Submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical': checked out 'a035d9ecf4620d3b06e2c6c50b4f0c44db56c44d'
+
+170.6 Submodule 'extern/googletest' (git@github.com:google/googletest.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical/extern/googletest'
+
+170.6 Submodule 'extern/yaml-cpp' (git@github.com:jbeder/yaml-cpp.git) registered for path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical/extern/yaml-cpp'
+
+170.6 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical/extern/googletest'...
+
+170.6 error: cannot run ssh: No such file or directory
+
+170.6 fatal: unable to fork
+
+170.6 fatal: clone of 'git@github.com:google/googletest.git' into submodule path '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical/extern/googletest' failed
+
+170.6 Failed to clone 'extern/googletest'. Retry scheduled
+
+170.6 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical/extern/yaml-cpp'...
+
+170.6 error: cannot run ssh: No such file or directory
+
+170.6 fatal: unable to fork
+
+170.6 fatal: clone of 'git@github.com:jbeder/yaml-cpp.git' into submodule path '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical/extern/yaml-cpp' failed
+
+170.6 Failed to clone 'extern/yaml-cpp'. Retry scheduled
+
+170.6 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical/extern/googletest'...
+
+170.6 error: cannot run ssh: No such file or directory
+
+170.6 fatal: unable to fork
+
+170.6 fatal: clone of 'git@github.com:google/googletest.git' into submodule path '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical/extern/googletest' failed
+
+170.6 Failed to clone 'extern/googletest' a second time, aborting
+
+171.7 Submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/garnet/gem5_astra': checked out 'c09ba4ebee0643cff3f75d64143d5310b7f31ee1'
+
+172.3 Submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/ns-3': checked out 'a2dd172aa001f61085715e5766c1f566d918b3bb'
+
+172.3 Submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/remote_memory_backend/analytical': checked out 'bb12dd56fb05980e749736e6dcbd796a918b9256'
+
+172.3 Failed to recurse into submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim/extern/network_backend/analytical'
+
+172.3 Submodule path 'sims/AstraSim/astrasim_archgym_public/symbolic_tensor_network': checked out '89fb51480ac72db2d2d6199983f3bd00ba6c28e8'
+
+172.4 Failed to recurse into submodule path 'sims/AstraSim/astrasim_archgym_public/astra-sim'
+
+172.5 Submodule path 'sims/CFU-Playground/CFU-Playground': checked out 'fb43f80f44c32f81c9cdc1d7c015946f0265fa08'
+
+172.6 Submodule 'third_party/make-env' (https://github.com/SymbiFlow/make-env.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/make-env'
+
+172.6 Submodule 'third_party/python/amaranth' (https://github.com/amaranth-lang/amaranth) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/amaranth'
+
+172.6 Submodule 'third_party/python/jinja' (https://github.com/pallets/jinja.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/jinja'
+
+172.6 Submodule 'soc/deps/litedram' (https://github.com/enjoy-digital/litedram.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/litedram'
+
+172.6 Submodule 'soc/deps/liteeth' (https://github.com/enjoy-digital/liteeth.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/liteeth'
+
+172.6 Submodule 'third_party/python/litehyperbus' (https://github.com/litex-hub/litehyperbus.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/litehyperbus'
+
+172.6 Submodule 'soc/deps/liteiclink' (https://github.com/enjoy-digital/liteiclink.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/liteiclink'
+
+172.6 Submodule 'third_party/python/litepcie' (https://github.com/enjoy-digital/litepcie.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/litepcie'
+
+172.6 Submodule 'third_party/python/litescope' (https://github.com/enjoy-digital/litescope.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/litescope'
+
+172.6 Submodule 'third_party/python/litespi' (https://github.com/litex-hub/litespi.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/litespi'
+
+172.6 Submodule 'third_party/python/litevideo' (https://github.com/enjoy-digital/litevideo.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/litevideo'
+
+172.6 Submodule 'soc/deps/litex' (https://github.com/enjoy-digital/litex.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/litex'
+
+172.6 Submodule 'soc/deps/litex_boards' (https://github.com/litex-hub/litex-boards.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/litex_boards'
+
+172.6 Submodule 'third_party/python/markupsafe' (https://github.com/pallets/markupsafe.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/markupsafe'
+
+172.6 Submodule 'third_party/python/meson' (https://github.com/mesonbuild/meson) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/meson'
+
+172.6 Submodule 'soc/deps/migen' (https://github.com/m-labs/migen.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/migen'
+
+172.6 Submodule 'soc/deps/pyserial' (https://github.com/pyserial/pyserial.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pyserial'
+
+172.6 Submodule 'third_party/python/pythondata-misc-tapcfg' (https://github.com/litex-hub/pythondata-misc-tapcfg.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-misc-tapcfg'
+
+172.6 Submodule 'third_party/python/pythondata-software-picolibc' (https://github.com/litex-hub/pythondata-software-picolibc) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-software-picolibc'
+
+172.6 Submodule 'soc/deps/pythondata_cpu_serv' (https://github.com/litex-hub/pythondata-cpu-serv.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_serv'
+
+172.6 Submodule 'soc/deps/pythondata_cpu_vexriscv' (https://github.com/litex-hub/pythondata-cpu-vexriscv.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv'
+
+172.6 Submodule 'soc/deps/pythondata_software_compiler_rt' (https://github.com/litex-hub/pythondata-software-compiler_rt.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_software_compiler_rt'
+
+172.6 Submodule 'third_party/python/pyvcd' (https://github.com/SanDisk-Open-Source/pyvcd.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pyvcd'
+
+172.6 Submodule 'third_party/python/valentyusb' (https://github.com/litex-hub/valentyusb) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/valentyusb'
+
+172.6 Submodule 'third_party/python/vizier' (https://github.com/ShvetankPrakash/vizier.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/vizier'
+
+172.6 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/make-env'...
+
+173.4 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/amaranth'...
+
+174.7 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/jinja'...
+
+176.1 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/litedram'...
+
+178.1 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/liteeth'...
+
+179.0 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/litehyperbus'...
+
+179.7 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/liteiclink'...
+
+180.4 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/litepcie'...
+
+181.3 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/litescope'...
+
+182.6 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/litespi'...
+
+183.3 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/litevideo'...
+
+184.0 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/litex'...
+
+186.2 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/litex_boards'...
+
+187.2 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/markupsafe'...
+
+188.8 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/meson'...
+
+196.5 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/migen'...
+
+197.6 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pyserial'...
+
+198.6 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-misc-tapcfg'...
+
+199.3 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-software-picolibc'...
+
+200.0 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_serv'...
+
+201.6 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv'...
+
+202.7 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_software_compiler_rt'...
+
+205.5 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pyvcd'...
+
+206.6 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/valentyusb'...
+
+207.3 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/vizier'...
+
+208.2 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/make-env': checked out '33b80bd32c30fb8affd0fd5cda544d1bca075593'
+
+208.2 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/amaranth': checked out 'db49294cf722e9463666bd06f81a86f930b8707c'
+
+208.3 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/jinja': checked out '7fb13bf94443f067c74204a1aee368fdf0591764'
+
+208.3 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/litedram': checked out '3d066c87f948e3f8584dfa0244d0930161f71e62'
+
+208.4 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/liteeth': checked out '6d742e7999acc775dc26d58f1cafc170ce2c54f5'
+
+208.4 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/litehyperbus': checked out '76454e4c0c304a34b9915722de750887c3abbe89'
+
+208.4 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/liteiclink': checked out '04aa1396f500418dbcbb15f5afb08eaf01a9e8d9'
+
+208.5 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/litepcie': checked out 'b4f3f2148e6d554d2f4c1d3ab30af3757eaf8de5'
+
+208.5 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/litescope': checked out '1d7e91d019ed2b9fff56485995a7d0d16b45c21b'
+
+208.6 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/litespi': checked out '28a17d801d588f1cd43ac8c38b98faa603eba45e'
+
+208.6 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/litevideo': checked out '41f30143075ece3fff5c33a332ed067d1837cbb3'
+
+208.7 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/litex': checked out 'b9a1fec30fd1f0691f9c6463bac24ea1da75355a'
+
+208.8 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/litex_boards': checked out 'cf030402d496102005161023b8d27123546ae53d'
+
+208.8 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/markupsafe': checked out 'ac5017b394f526b9be33f48d397a1844023dd573'
+
+209.1 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/meson': checked out 'ec388fe7c2b93879499ad782c2da41ec22d003b2'
+
+209.2 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/migen': checked out '0fb91737090fe45fd764ea3f71257a4c53c7a4ae'
+
+209.2 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pyserial': checked out '31fa4807d73ed4eb9891a88a15817b439c4eea2d'
+
+209.3 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-misc-tapcfg': checked out 'fbcb02422940bbb97c492f0c970959d262b33632'
+
+209.3 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-software-picolibc': checked out '393d106c6e9b8fdd115a0a301f3a6c0478f92f3b'
+
+209.3 Submodule 'pythondata_software_picolibc/data' (https://github.com/picolibc/picolibc) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-software-picolibc/pythondata_software_picolibc/data'
+
+209.3 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-software-picolibc/pythondata_software_picolibc/data'...
+
+223.8 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata-software-picolibc/pythondata_software_picolibc/data': checked out 'ce7bd3ba2761497ba380cb131d1493eb7c2bcaab'
+
+223.8 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_serv': checked out 'cdede3b5e35e0c8c385ff10d783905d95cd864ab'
+
+223.9 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv': checked out '11ac8e1c0c66fa0537053980b47757d97dbddf84'
+
+223.9 Submodule 'litex/data/cpu/vexriscv/verilog/ext/VexRiscv' (https://github.com/SpinalHDL/VexRiscv.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv'
+
+223.9 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv'...
+
+225.8 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv': checked out '24795ef09b88defe2ee1bb335e5caaf7e07e64ff'
+
+225.8 Submodule 'src/test/resources/VexRiscvRegressionData' (https://github.com/SpinalHDL/VexRiscvRegressionData.git) registered for path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/src/test/resources/VexRiscvRegressionData'
+
+225.8 Cloning into '/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/src/test/resources/VexRiscvRegressionData'...
+
+228.8 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_cpu_vexriscv/pythondata_cpu_vexriscv/verilog/ext/VexRiscv/src/test/resources/VexRiscvRegressionData': checked out '539398c1481203a51115b5f1228ea961f0ac9bd3'
+
+228.9 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pythondata_software_compiler_rt': checked out 'fcb03245613ccf3079cc833a701f13d0beaae09d'
+
+229.0 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/pyvcd': checked out 'ecaa5bf0faebeb34a5b0eead41a0ad8c73abb8b4'
+
+229.0 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/valentyusb': checked out '0b534ccfccfcdcb7a5db219743f0c0b20e5ec412'
+
+229.1 Submodule path 'sims/CFU-Playground/CFU-Playground/third_party/python/vizier': checked out '4e4fe1e5a95878a8707157c4707e302418220e08'
+
+229.1 Failed to recurse into submodule path 'sims/AstraSim/astrasim_archgym_public'
+
+------
+
+Dockerfile:29
+
+--------------------
+
+  27 |     
+
+  28 |     #RUN conda install
+
+  29 | >>> RUN git clone --recursive https://github.com/srivatsankrishnan/oss-arch-gym.git
+
+  30 |     RUN chown -R 1000:root /home/workspace && chmod -R 775 /home/workspace
+
+  31 |     RUN cd oss-arch-gym && conda env create -f environment.yml
+
+--------------------
+
+ERROR: failed to solve: process "/bin/sh -c git clone --recursive https://github.com/srivatsankrishnan/oss-arch-gym.git" did not complete successfully: exit code: 1

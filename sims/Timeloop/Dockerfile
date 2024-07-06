@@ -26,7 +26,15 @@ RUN touch /home/workspace/.nointro
 RUN chown -R 1000:root /home/workspace && chmod -R 775 /home/workspace
 
 #RUN conda install
-RUN git clone --recursive https://github.com/srivatsankrishnan/oss-arch-gym.git
+# RUN git clone --recursive https://github.com/srivatsankrishnan/oss-arch-gym.git
+RUN git clone https://github.com/srivatsankrishnan/oss-arch-gym.git
+
+# Initialize and update submodules
+RUN git config --global --add safe.directory '*'
+RUN git submodule init
+RUN git config --global url."https://github.com/".insteadOf "git@github.com:"
+RUN git submodule update --recursive
+
 RUN chown -R 1000:root /home/workspace && chmod -R 775 /home/workspace
 RUN cd oss-arch-gym && conda env create -f environment.yml
 

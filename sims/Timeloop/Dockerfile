@@ -1,5 +1,7 @@
-FROM nelliewu/accelergy-timeloop-infrastructure:latest AS builder
-FROM timeloopaccelergy/accelergy-timeloop-infrastructure:latest
+# FROM nelliewu/accelergy-timeloop-infrastructure:latest AS builder
+FROM timeloopaccelergy/accelergy-timeloop-infrastructure:latest@sha256:894d997d15c080ec27455b2d9e9ae37098b1d7074b8d575c25bb8bfa1252cab7
+# can change the above stuff to arm64 maybe
+# docker pull timeloopaccelergy/accelergy-timeloop-infrastructure@sha256:894d997d15c080ec27455b2d9e9ae37098b1d7074b8d575c25bb8bfa1252cab7
 
 # Install the base utilities
 RUN apt-get update -y \
@@ -12,7 +14,7 @@ RUN apt-get update -y \
 
 # Install miniconda
 ENV CONDA_DIR /opt/conda
-RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh && \
+RUN wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-aarch64.sh -O ~/miniconda.sh && \
     /bin/bash ~/miniconda.sh -b -p /opt/conda
 
 # Put conda on the path

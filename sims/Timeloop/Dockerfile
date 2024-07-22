@@ -29,7 +29,7 @@ RUN chown -R 1000:root /home/workspace && chmod -R 775 /home/workspace
 
 #RUN conda install
 # RUN git clone --recursive https://github.com/srivatsankrishnan/oss-arch-gym.git
-RUN git clone https://github.com/srivatsankrishnan/oss-arch-gym.git
+RUN git clone https://github.com/SaptarishiD/archgym2.git
 
 # Initialize and update submodules
 RUN git config --global --add safe.directory '*'
@@ -38,16 +38,17 @@ RUN git config --global url."https://github.com/".insteadOf "git@github.com:"
 RUN git submodule update --recursive
 
 RUN chown -R 1000:root /home/workspace && chmod -R 775 /home/workspace
-RUN cd oss-arch-gym && conda env create -f environment.yml
+RUN cd archgym2 && conda env create -f environment.yml
+# RUN pip install envlogger==1.0.8
 
 # Make RUN commands use the new environment:
 RUN echo "conda activate arch-gym" >> ~/.bashrc
 SHELL ["conda", "run", "-n", "arch-gym", "/bin/bash", "--login", "-c"]
 
-WORKDIR /home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym
+WORKDIR /home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/archgym2
 RUN ./install_sim.sh viz
 RUN rm -r ./Project_FARSI
-RUN git config --global --add safe.directory /home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym
+RUN git config --global --add safe.directory /home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/archgym2
 RUN git config --global --add safe.directory /home/workspace/src/timeloop-examples
 RUN git rm -r Project_FARSI
 RUN ./install_sim.sh farsi
@@ -55,6 +56,6 @@ RUN ./install_sim.sh farsi
 ENV LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/conda/envs/arch-gym/lib/
 RUN echo $LD_LIBRARY_PATH
 
-WORKDIR /home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/Timeloop
-ENTRYPOINT ["conda", "run", "-n", "arch-gym", "python", "/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/oss-arch-gym/sims/Timeloop/launch_gcp.py"]
+WORKDIR /home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/archgym2/sims/Timeloop
+ENTRYPOINT ["conda", "run", "-n", "arch-gym", "python", "/home/workspace/src/timeloop-examples/workspace/final-project/example_designs/eyeriss_like/archgym2/sims/Timeloop/launch_gcp.py"]
 

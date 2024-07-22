@@ -6,7 +6,7 @@ scikit-learn==1.2.2
 xgboost
 atoma
 scikit-optimize
-envlogger==1.0.8
+# envlogger==1.0.8
 absl-py
 sympy
 plotly

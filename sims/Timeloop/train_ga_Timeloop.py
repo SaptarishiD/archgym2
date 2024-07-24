@@ -4,7 +4,7 @@ import argparse
 import os
 import sys
 import time
-import envlogger
+# import envlogger
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt

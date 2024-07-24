@@ -14,60 +14,60 @@ architecture:
         technology: 45nm
       local:
       - attributes:
-          block-size: 4
-          memory_depth: 16384
-          memory_width: 64
+          block-size: 1
+          memory_depth: 8192
+          memory_width: 16
           n_banks: 32
-          read_bandwidth: 16
+          read_bandwidth: 2
           word-bits: 16
           write_bandwidth: 16
-        class: smartbuffer_SRAM
+        class: SRAM
         name: shared_glb
       - attributes:
-          block-size: 1
-          depth: 16
-          meshX: 14
-          width: 16
+          block-size: 4
+          depth: 512
+          meshX: 7
+          width: 64
           word-bits: 16
-        class: SRAM
+        class: smartbuffer_SRAM
         name: DummyBuffer[0..13]
       name: eyeriss
       subtree:
       - local:
         - attributes:
-            block-size: 1
-            memory_depth: 12
-            memory_width: 16
-            meshX: 14
-            read_bandwidth: 2
+            block-size: 2
+            memory_depth: 32768
+            memory_width: 32
+            meshX: 7
+            read_bandwidth: 8
             word-bits: 16
             write_bandwidth: 2
-          class: smartbuffer_SRAM
+          class: regfile
           name: ifmap_spad
         - attributes:
-            block-size: 1
-            memory_depth: 192
-            memory_width: 16
-            meshX: 14
+            block-size: 4
+            memory_depth: 2048
+            memory_width: 64
+            meshX: 7
             read_bandwidth: 2
             word-bits: 16
-            write_bandwidth: 2
+            write_bandwidth: 8
           class: smartbuffer_SRAM
           name: weights_spad
         - attributes:
             block-size: 1
-            memory_depth: 16
+            memory_depth: 256
             memory_width: 16
-            meshX: 14
-            read_bandwidth: 2
+            meshX: 7
+            read_bandwidth: 8
             update_fifo_depth: 2
             word-bits: 16
-            write_bandwidth: 2
-          class: smartbuffer_SRAM
+            write_bandwidth: 4
+          class: SRAM
           name: psum_spad
         - attributes:
             datawidth: 16
-            meshX: 14
+            meshX: 7
           class: intmac
           name: mac
         name: PE[0..167]

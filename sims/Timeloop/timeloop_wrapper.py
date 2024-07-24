@@ -72,19 +72,26 @@ class TimeloopWrapper:
         return False
 
     def obtain_metrics(self):
+        # here need to access the summary ART file and sum up the areas from there and return it
         file = open(self.output_dir + "/timeloop-mapper.stats.txt", "r")
         energy = np.float64()
         area = np.float64()
         cycles = np.float64()
         for line in file:
             line = line.strip()
-            if "Area:" in line:
-                area = float(line.split(' ')[1])
+            # here the area it's getting is the last one which is 0.0 due to timeloop error and area isn't updated also so the area metric in the caller also remains 0
+            # need to make sure that the last area is still 0 cause otherwise adding total area to total area
+            # summing up areas from the stats file since the totalled area at the bottom is wrongly 0 due to timeloop internal error
+            if "Area" in line:
+                area += float(line.split(' ')[-2])
             elif "Energy:" in line:
                 energy = float(line.split(' ')[1])
             elif "Cycles:" in line:
                 cycles = float(line.split(' ')[1])
-
+        area /= 1000000 # um2 to mm2
+        print("\n========obtain_metrics() in timeloop_wrapper.py==========\n")
+        print("Energy:{}, Area:{}, Cycles:{}".format(energy, area, cycles))
+        print("\n========obtain_metrics() in timeloop_wrapper.py==========\n")
         return energy, area, cycles
 
     def update_arch(self, arch_params):

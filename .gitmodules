@@ -5,3 +5,6 @@
 [submodule "sims/CFU-Playground/CFU-Playground"]
 	path = sims/CFU-Playground/CFU-Playground
 	url = https://github.com/google/CFU-Playground.git
+[submodule "Project_FARSI"]
+	path = Project_FARSI
+	url = https://github.com/facebookresearch/Project_FARSI.git
